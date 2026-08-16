@@ -46,6 +46,9 @@
       const btn = document.createElement("button");
       btn.className = "portal";
       btn.style.setProperty("--img", "url(" + cat.banner + ")");
+      if (cat.bannerWide) {
+        btn.style.setProperty("--img-wide", "url(" + cat.bannerWide + ")");
+      }
       btn.innerHTML =
         '<span class="portal-label">' + cat.label + "<em>" + count + "</em></span>";
       btn.addEventListener("click", () => enterCategory(cat.key));

@@ -18,23 +18,30 @@ $thumbDir = Join-Path $Root "category-thumbs"
 $dataDir = Join-Path $Root "data"
 New-Item -ItemType Directory -Force $dataDir | Out-Null
 
-# --- categories, from category-thumbs/ ---
-$thumbFiles = Get-ChildItem -Path $thumbDir -File -Filter "*.jpg" | Sort-Object Name
+# --- categories, from category-thumbs/ (skip _wide companions, handled below) ---
+$thumbFiles = Get-ChildItem -Path $thumbDir -File -Filter "*.jpg" |
+  Where-Object { $_.BaseName -notmatch '_wide$' } | Sort-Object Name
 $categories = @()
 foreach ($f in $thumbFiles) {
   if ($f.BaseName -match '^(\d{2})_(.+)$') {
     $num = $Matches[1]
     $label = $Matches[2]
     $key = $label.ToLower()
-    $categories += [PSCustomObject]@{
+    $widePath = Join-Path $thumbDir "$($f.BaseName)_wide.jpg"
+    $cat = [PSCustomObject]@{
       key = $key
       label = $label
       banner = "category-thumbs/$($f.Name)"
       isAll = ($key -eq "all")
     }
+    if (Test-Path $widePath) {
+      $cat | Add-Member -NotePropertyName bannerWide -NotePropertyValue "category-thumbs/$($f.BaseName)_wide.jpg"
+    }
+    $categories += $cat
   }
 }
-Write-Output "Categories found: $($categories.Count)"
+$wideCount = ($categories | Where-Object { $_.PSObject.Properties.Name -contains 'bannerWide' }).Count
+Write-Output "Categories found: $($categories.Count) ($wideCount with a _wide mobile banner)"
 
 # --- artworks, from each NN_Label folder (skip 'all', it has no real folder) ---
 $artworks = @()
@@ -61,7 +68,7 @@ foreach ($cat in $categories) {
 }
 
 $manifest = [PSCustomObject]@{
-  categories  = $categories | Select-Object key, label, banner
+  categories  = $categories | Select-Object key, label, banner, bannerWide
   artworks    = $artworks
 }
 

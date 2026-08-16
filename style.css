@@ -150,7 +150,18 @@ body{
 
 @media (max-width:640px){
   .portals{flex-direction:column;height:auto;}
-  .portal{height:120px;flex:none;}
+  .portal{
+    height:120px;flex:none;
+    /* the stacked mobile box is wide+short, the opposite shape of the tall
+       desktop portal -- reusing the same portrait crop here just centers a
+       thin sliver of it with dark empty space on both sides. Prefer a
+       dedicated landscape crop (category-thumbs/NN_Label_wide.jpg) sized for
+       this shape; falls back to the portrait banner if one hasn't been made
+       yet for that category. No hover on mobile, so a plain static `cover`
+       fill is fine here -- no need for the height-locked auto-100% trick. */
+    background-image:var(--img-wide, var(--img));
+    background-size:cover;
+  }
 }
 
 /* ---------- gallery view ---------- */

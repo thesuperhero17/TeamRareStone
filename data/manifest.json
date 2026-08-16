@@ -4,43 +4,43 @@
                            "key":  "all",
                            "label":  "All",
                            "banner":  "category-thumbs/00_All.jpg",
-                           "bannerWide":  null
+                           "bannerWide":  "category-thumbs/00_All_wide.jpg"
                        },
                        {
                            "key":  "nikke",
                            "label":  "Nikke",
                            "banner":  "category-thumbs/01_Nikke.jpg",
-                           "bannerWide":  null
+                           "bannerWide":  "category-thumbs/01_Nikke_wide.jpg"
                        },
                        {
                            "key":  "trickcal",
                            "label":  "Trickcal",
                            "banner":  "category-thumbs/02_Trickcal.jpg",
-                           "bannerWide":  null
+                           "bannerWide":  "category-thumbs/02_Trickcal_wide.jpg"
                        },
                        {
                            "key":  "bluearchive",
                            "label":  "BlueArchive",
                            "banner":  "category-thumbs/03_BlueArchive.jpg",
-                           "bannerWide":  null
+                           "bannerWide":  "category-thumbs/03_BlueArchive_wide.jpg"
                        },
                        {
                            "key":  "lastorigin",
                            "label":  "LastOrigin",
                            "banner":  "category-thumbs/04_LastOrigin.jpg",
-                           "bannerWide":  null
+                           "bannerWide":  "category-thumbs/04_LastOrigin_wide.jpg"
                        },
                        {
                            "key":  "genshin",
                            "label":  "Genshin",
                            "banner":  "category-thumbs/05_Genshin.jpg",
-                           "bannerWide":  null
+                           "bannerWide":  "category-thumbs/05_Genshin_wide.jpg"
                        },
                        {
                            "key":  "other",
                            "label":  "Other",
                            "banner":  "category-thumbs/06_Other.jpg",
-                           "bannerWide":  null
+                           "bannerWide":  "category-thumbs/06_Other_wide.jpg"
                        }
                    ],
     "artworks":  [

@@ -106,7 +106,7 @@ body{
      switches to horizontal scroll instead. Chosen so ~10-11 categories can
      still fit by narrowing alone at typical desktop widths -- scroll is the
      fallback for "way more than expected", not the everyday behavior. */
-  --portal-floor:92px;
+  --portal-floor:50px;
 }
 .portal{
   position:relative;flex:1 1 130px;flex-shrink:1;min-width:var(--portal-floor);border:none;padding:0;margin:0;cursor:pointer;

@@ -100,7 +100,7 @@ body{
 
 /* ---------- category portals ---------- */
 .portals{
-  display:flex;gap:3px;height:min(58vh,520px);min-height:300px;
+  display:flex;gap:3px;height:clamp(300px,58vh,520px);
   overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:var(--border) transparent;
 }
 .portal{
@@ -122,11 +122,16 @@ body{
 @media (hover:hover) and (pointer:fine){
   /* pure CSS, no JS: the browser's live :hover tracking can't go stale the
      way a JS mouseenter/mouseleave pair can during fast pointer movement.
-     Siblings float to their 110px floor; the hovered one absorbs exactly
-     the freed slack via flex-grow, so the row's total width never changes
-     -- only how it's divided up between portals. */
-  .portals:has(.portal:hover) .portal{flex-grow:0;flex-basis:110px;}
-  .portals:has(.portal:hover) .portal:hover{flex-grow:1;}
+     The hovered portal grows to EXACTLY its own artwork's natural render
+     width at the current portal height (2:3 ratio) -- never wider, so no
+     letterboxing beside the image. The remaining siblings share whatever
+     slack is left over via flex-grow, so the row's total width still never
+     changes -- it's just redistributed differently than a plain 110px floor. */
+  .portals:has(.portal:hover) .portal{flex-grow:1;flex-basis:110px;}
+  .portals:has(.portal:hover) .portal:hover{
+    flex-grow:0;
+    flex-basis:calc(clamp(300px,58vh,520px) * 0.6667);
+  }
   .portal:hover::before{opacity:.1;}
 }
 .portal-label{

@@ -105,7 +105,10 @@ body{
 }
 .portal{
   position:relative;flex:1 1 130px;min-width:110px;border:none;padding:0;margin:0;cursor:pointer;
-  background-color:var(--surface-2);background-image:var(--img);background-size:cover;background-position:center;
+  background-color:var(--surface-2);background-image:var(--img);
+  /* fixed size (not "cover") so widening the box on hover only reveals more
+     of the image at the same scale -- a pure sideways reveal, no rescale */
+  background-size:auto 160%;background-position:center;background-repeat:no-repeat;
   overflow:hidden;
   transition:flex-grow .55s cubic-bezier(.2,.8,.2,1), flex-basis .55s cubic-bezier(.2,.8,.2,1);
 }

@@ -49,6 +49,18 @@
       btn.innerHTML =
         '<span class="portal-label">' + cat.label + "<em>" + count + "</em></span>";
       btn.addEventListener("click", () => enterCategory(cat.key));
+      // Compute the hover target width in real px (2:3 artwork ratio) so the
+      // flex-basis transition is a plain number tween -- smooth, unlike
+      // animating to/from "auto" or the CSS aspect-ratio property.
+      btn.addEventListener("mouseenter", () => {
+        const h = btn.getBoundingClientRect().height;
+        btn.style.flexGrow = "0";
+        btn.style.flexBasis = Math.round((h * 2) / 3) + "px";
+      });
+      btn.addEventListener("mouseleave", () => {
+        btn.style.flexGrow = "";
+        btn.style.flexBasis = "";
+      });
       portalsEl.appendChild(btn);
     });
   }

@@ -257,8 +257,8 @@ body{
   opacity:0;pointer-events:none;transform:translateY(6px);
   transition:opacity .25s ease,transform .25s ease,border-color .15s ease,color .15s ease;
 }
-.to-top.show{opacity:.88;pointer-events:auto;transform:translateY(0);}
-.to-top:hover{opacity:1;border-color:var(--accent);color:var(--accent);}
+.to-top.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+.to-top:hover{border-color:var(--accent);color:var(--accent);}
 .to-top:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 
 /* ---------- lightbox ---------- */

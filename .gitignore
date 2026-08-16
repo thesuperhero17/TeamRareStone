@@ -1,0 +1,7 @@
+# Raw PNG originals kept locally for reference/backup only.
+# The site uses the compressed JPGs sitting next to them; PNGs are never
+# needed on GitHub and would bloat the repo a lot (originals are multi-MB each).
+/0[0-9]_*/*.png
+/0[0-9]_*/*.PNG
+/category-thumbs/*.png
+/category-thumbs/*.PNG

@@ -185,4 +185,15 @@
   });
 
   renderPortals();
+
+  const toTopBtn = document.getElementById("toTop");
+  function updateToTop() {
+    toTopBtn.classList.toggle("show", window.scrollY > 400);
+  }
+  window.addEventListener("scroll", updateToTop, { passive: true });
+  toTopBtn.addEventListener("click", () => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+  });
+  updateToTop();
 })();

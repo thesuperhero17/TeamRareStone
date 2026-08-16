@@ -49,21 +49,38 @@
       btn.innerHTML =
         '<span class="portal-label">' + cat.label + "<em>" + count + "</em></span>";
       btn.addEventListener("click", () => enterCategory(cat.key));
-      // Compute the hover target width in real px (2:3 artwork ratio) so the
-      // flex-basis transition is a plain number tween -- smooth, unlike
-      // animating to/from "auto" or the CSS aspect-ratio property.
-      btn.addEventListener("mouseenter", () => {
-        const h = btn.getBoundingClientRect().height;
-        btn.style.flexGrow = "0";
-        btn.style.flexBasis = Math.round((h * 2) / 3) + "px";
-      });
-      btn.addEventListener("mouseleave", () => {
-        btn.style.flexGrow = "";
-        btn.style.flexBasis = "";
-      });
+      btn.dataset.key = cat.key;
       portalsEl.appendChild(btn);
     });
   }
+
+  // Single source of truth for which portal is "hovered", driven off the
+  // container rather than each button independently -- fast mouse movement
+  // across several adjacent portals used to leave stale widths behind when
+  // each button tracked its own enter/leave (events can arrive out of
+  // order). Every pointer move re-asserts the full state for every portal,
+  // so there is never more than one expanded at a time no matter how fast
+  // the cursor moves.
+  let hoveredKey = null;
+  function applyPortalHover(key) {
+    if (key === hoveredKey) return;
+    hoveredKey = key;
+    portalsEl.querySelectorAll(".portal").forEach((p) => {
+      if (p.dataset.key === key) {
+        const h = p.getBoundingClientRect().height;
+        p.style.flexGrow = "0";
+        p.style.flexBasis = Math.round((h * 2) / 3) + "px";
+      } else {
+        p.style.flexGrow = "";
+        p.style.flexBasis = "";
+      }
+    });
+  }
+  portalsEl.addEventListener("pointermove", (e) => {
+    const btn = e.target.closest(".portal");
+    applyPortalHover(btn ? btn.dataset.key : null);
+  });
+  portalsEl.addEventListener("pointerleave", () => applyPortalHover(null));
 
   function enterCategory(key) {
     activeCat = key;

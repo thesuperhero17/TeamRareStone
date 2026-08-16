@@ -61,7 +61,6 @@ foreach ($cat in $categories) {
 }
 
 $manifest = [PSCustomObject]@{
-  generatedAt = (Get-Date).ToString("o")
   categories  = $categories | Select-Object key, label, banner
   artworks    = $artworks
 }

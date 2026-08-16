@@ -1,0 +1,2058 @@
+﻿{
+    "generatedAt":  "2026-08-16T15:07:11.6626553+09:00",
+    "categories":  [
+                       {
+                           "key":  "all",
+                           "label":  "All",
+                           "banner":  "category-thumbs/00_All.jpg"
+                       },
+                       {
+                           "key":  "nikke",
+                           "label":  "Nikke",
+                           "banner":  "category-thumbs/01_Nikke.jpg"
+                       },
+                       {
+                           "key":  "trickcal",
+                           "label":  "Trickcal",
+                           "banner":  "category-thumbs/02_Trickcal.jpg"
+                       },
+                       {
+                           "key":  "bluearchive",
+                           "label":  "BlueArchive",
+                           "banner":  "category-thumbs/03_BlueArchive.jpg"
+                       },
+                       {
+                           "key":  "lastorigin",
+                           "label":  "LastOrigin",
+                           "banner":  "category-thumbs/04_LastOrigin.jpg"
+                       },
+                       {
+                           "key":  "genshin",
+                           "label":  "Genshin",
+                           "banner":  "category-thumbs/05_Genshin.jpg"
+                       },
+                       {
+                           "key":  "other",
+                           "label":  "Other",
+                           "banner":  "category-thumbs/06_Other.jpg"
+                       }
+                   ],
+    "artworks":  [
+                     {
+                         "src":  "01_Nikke/0101_Alice.jpg",
+                         "title":  "Alice",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0100_Trina.jpg",
+                         "title":  "Trina",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0099_Vesti.jpg",
+                         "title":  "Vesti",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0098_Volume.jpg",
+                         "title":  "Volume",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0097_GuillotineMaiden.jpg",
+                         "title":  "GuillotineMaiden",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0096_Cecil.jpg",
+                         "title":  "Cecil",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0095_ClayBay.jpg",
+                         "title":  "ClayBay",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0094_Emma.jpg",
+                         "title":  "Emma",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0093_Nihilister.jpg",
+                         "title":  "Nihilister",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0092_Sora.jpg",
+                         "title":  "Sora",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0091_BlancNoir.jpg",
+                         "title":  "BlancNoir",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0090_Biscuit.jpg",
+                         "title":  "Biscuit",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0089_Label.jpg",
+                         "title":  "Label",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0088_Rei.jpg",
+                         "title":  "Rei",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0087_Elegg.jpg",
+                         "title":  "Elegg",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0086_Nayuta.jpg",
+                         "title":  "Nayuta",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0085_Liberalio.jpg",
+                         "title":  "Liberalio",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0084_Aria.jpg",
+                         "title":  "Aria",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0083_Modernia.jpg",
+                         "title":  "Modernia",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0082_Leona.jpg",
+                         "title":  "Leona",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0081_CinderellaLittleMermaid.jpg",
+                         "title":  "CinderellaLittleMermaid",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0080_Arcana.jpg",
+                         "title":  "Arcana",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0079_Helm.jpg",
+                         "title":  "Helm",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0078_GODDESSSquad.jpg",
+                         "title":  "GODDESSSquad",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0077_MatisSquadSyuen.jpg",
+                         "title":  "MatisSquadSyuen",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0076_Crow.jpg",
+                         "title":  "Crow",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0075_maidenicerose_nopanty.jpg",
+                         "title":  "maidenicerose_nopanty",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0074_ZizBahamut.jpg",
+                         "title":  "ZizBahamut",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0073_dorothy_doro.jpg",
+                         "title":  "dorothy_doro",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0072_Privaty.jpg",
+                         "title":  "Privaty",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0071_Grave.jpg",
+                         "title":  "Grave",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0070_Jien.jpg",
+                         "title":  "Jien",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0069_DKillerWife.jpg",
+                         "title":  "DKillerWife",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0068_Noah.jpg",
+                         "title":  "Noah",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0067_Ingrid.jpg",
+                         "title":  "Ingrid",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0066_Rosanna.jpg",
+                         "title":  "Rosanna",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0065_Liliweiss.jpg",
+                         "title":  "Liliweiss",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0064_Guilty.jpg",
+                         "title":  "Guilty",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0063_Harran.jpg",
+                         "title":  "Harran",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0062_Rapunzel.jpg",
+                         "title":  "Rapunzel",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0061_Yuni.jpg",
+                         "title":  "Yuni",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0060_Mihara.jpg",
+                         "title":  "Mihara",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0059_DazzlingPearlSquad.jpg",
+                         "title":  "DazzlingPearlSquad",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0058_AcrylicStand.jpg",
+                         "title":  "AcrylicStand",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0057_Ludmila.jpg",
+                         "title":  "Ludmila",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0056_Viper.jpg",
+                         "title":  "Viper",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0055_eunhwa.jpg",
+                         "title":  "eunhwa",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0054_ade.jpg",
+                         "title":  "ade",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0053_syuen.jpg",
+                         "title":  "syuen",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0052_redhood.jpg",
+                         "title":  "redhood",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0051_sora.jpg",
+                         "title":  "sora",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0050_arcana.jpg",
+                         "title":  "arcana",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0049_dorothy.jpg",
+                         "title":  "dorothy",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0048_rapiredhood_a.jpg",
+                         "title":  "rapiredhood_a",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0047_ScarletSister.jpg",
+                         "title":  "ScarletSister",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0046_Rupee.jpg",
+                         "title":  "Rupee",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0045_Scarlet.jpg",
+                         "title":  "Scarlet",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0044_Julia.jpg",
+                         "title":  "Julia",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0043_Mast.jpg",
+                         "title":  "Mast",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0042_SnowWhite.jpg",
+                         "title":  "SnowWhite",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0041_BreadyCrust.jpg",
+                         "title":  "BreadyCrust",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0040_Noise.jpg",
+                         "title":  "Noise",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0039_Anis.jpg",
+                         "title":  "Anis",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0038_Neve.jpg",
+                         "title":  "Neve",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0037_BehemothLeviathan.jpg",
+                         "title":  "BehemothLeviathan",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0036_neon.jpg",
+                         "title":  "neon",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0035_crownchime.jpg",
+                         "title":  "crownchime",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0034_matissquad.jpg",
+                         "title":  "matissquad",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0033_liter.jpg",
+                         "title":  "liter",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0032_dorothy.jpg",
+                         "title":  "dorothy",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0031_rapiredhood.jpg",
+                         "title":  "rapiredhood",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0030_tove.jpg",
+                         "title":  "tove",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0029_elegg.jpg",
+                         "title":  "elegg",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0028_nierautomata_1.jpg",
+                         "title":  "nierautomata_1",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0027_littlemermaid.jpg",
+                         "title":  "littlemermaid",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0026_mast.jpg",
+                         "title":  "mast",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0025_d.jpg",
+                         "title":  "d",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0024_soda.jpg",
+                         "title":  "soda",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0023_stellarblade.jpg",
+                         "title":  "stellarblade",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0022_nikkeatbat.jpg",
+                         "title":  "nikkeatbat",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0021_helm.jpg",
+                         "title":  "helm",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0020_alice.jpg",
+                         "title":  "alice",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0019_shifty.jpg",
+                         "title":  "shifty",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0018_viper.jpg",
+                         "title":  "viper",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0017_anis.jpg",
+                         "title":  "anis",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0016_crown.jpg",
+                         "title":  "crown",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0015_rapi.jpg",
+                         "title":  "rapi",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0014_cinderella.jpg",
+                         "title":  "cinderella",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0013_clay.jpg",
+                         "title":  "clay",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0012_bay.jpg",
+                         "title":  "bay",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0011_sakura.jpg",
+                         "title":  "sakura",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0010_tia.jpg",
+                         "title":  "tia",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0009_bready.jpg",
+                         "title":  "bready",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0008_blanc.jpg",
+                         "title":  "blanc",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0007_noir.jpg",
+                         "title":  "noir",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0006_scarletblackshadowskin.jpg",
+                         "title":  "scarletblackshadowskin",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0005_maidenicerose.jpg",
+                         "title":  "maidenicerose",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0004_mary.jpg",
+                         "title":  "mary",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0003_infinityrail.jpg",
+                         "title":  "infinityrail",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0002_Rupee.jpg",
+                         "title":  "Rupee",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "01_Nikke/0001_Emma.jpg",
+                         "title":  "Emma",
+                         "cat":  "nikke",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0045_Leone.jpg",
+                         "title":  "Leone",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0044_Haley(Sane).jpg",
+                         "title":  "Haley(Sane)",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0043_Kidian.jpg",
+                         "title":  "Kidian",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0042_Ashur.jpg",
+                         "title":  "Ashur",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0041_Canna.jpg",
+                         "title":  "Canna",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0040_Vela.jpg",
+                         "title":  "Vela",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0039_Rim(Chaos).jpg",
+                         "title":  "Rim(Chaos)",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0038_Polan.jpg",
+                         "title":  "Polan",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0037_Diana.jpg",
+                         "title":  "Diana",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0036_Aragnia.jpg",
+                         "title":  "Aragnia",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0035_Ran.jpg",
+                         "title":  "Ran",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0034_ButterKommy.jpg",
+                         "title":  "ButterKommy",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0033_Velvet.jpg",
+                         "title":  "Velvet",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0032_Renewa.jpg",
+                         "title":  "Renewa",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0031_DayaPureshine.jpg",
+                         "title":  "DayaPureshine",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0030_ShadyTwisted.jpg",
+                         "title":  "ShadyTwisted",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0029_Erpin.jpg",
+                         "title":  "Erpin",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0028_Yomi.jpg",
+                         "title":  "Yomi",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0027_Uros.jpg",
+                         "title":  "Uros",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0026_Tig.jpg",
+                         "title":  "Tig",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0025_Hilde.jpg",
+                         "title":  "Hilde",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0024_Ui.jpg",
+                         "title":  "Ui",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0023_Vivi.jpg",
+                         "title":  "Vivi",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0022_Aya.jpg",
+                         "title":  "Aya",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0021_chloe.jpg",
+                         "title":  "chloe",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0020_epica.jpg",
+                         "title":  "epica",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0019_ed.jpg",
+                         "title":  "ed",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0018_xion.jpg",
+                         "title":  "xion",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0017_dancecrew.jpg",
+                         "title":  "dancecrew",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0016_speakicrepe.jpg",
+                         "title":  "speakicrepe",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0015_diana.jpg",
+                         "title":  "diana",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0014_joanne.jpg",
+                         "title":  "joanne",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0013_naia-alice.jpg",
+                         "title":  "naia-alice",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0012_opal.jpg",
+                         "title":  "opal",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0011_selline.jpg",
+                         "title":  "selline",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0010_vela.jpg",
+                         "title":  "vela",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0009_vivi_magic.jpg",
+                         "title":  "vivi_magic",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0008_laika.jpg",
+                         "title":  "laika",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0007_Rim.jpg",
+                         "title":  "Rim",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0006_Elena.jpg",
+                         "title":  "Elena",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0005_aya.jpg",
+                         "title":  "aya",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0004_kommy.jpg",
+                         "title":  "kommy",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0003_ui.jpg",
+                         "title":  "ui",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0002_Daya.jpg",
+                         "title":  "Daya",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "02_Trickcal/0001_Butter.jpg",
+                         "title":  "Butter",
+                         "cat":  "trickcal",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0032_saori.jpg",
+                         "title":  "saori",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0031_hasumiswim_1.jpg",
+                         "title":  "hasumiswim_1",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0030_teapartyswim.jpg",
+                         "title":  "teapartyswim",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0029_kikyouswimsuit_1.jpg",
+                         "title":  "kikyouswimsuit_1",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0028_mari.jpg",
+                         "title":  "mari",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0027_hikari\u0026nozomi.jpg",
+                         "title":  "hikari\u0026nozomi",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0026_rabbitsquad.jpg",
+                         "title":  "rabbitsquad",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0025_plana.jpg",
+                         "title":  "plana",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0024_hoshino.jpg",
+                         "title":  "hoshino",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0023_arona.jpg",
+                         "title":  "arona",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0022_mika.jpg",
+                         "title":  "mika",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0021_izuna.jpg",
+                         "title":  "izuna",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0020_hibiki.jpg",
+                         "title":  "hibiki",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0019_hifumi.jpg",
+                         "title":  "hifumi",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0018_koharu.jpg",
+                         "title":  "koharu",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0017_problemsolver68.jpg",
+                         "title":  "problemsolver68",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0016_hasumi.jpg",
+                         "title":  "hasumi",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0015_noa.jpg",
+                         "title":  "noa",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0014_rio_R18.jpg",
+                         "title":  "rio",
+                         "cat":  "bluearchive",
+                         "r18":  true
+                     },
+                     {
+                         "src":  "03_BlueArchive/0013_yuuka.jpg",
+                         "title":  "yuuka",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0012_kikyou.jpg",
+                         "title":  "kikyou",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0011_gameclub.jpg",
+                         "title":  "gameclub",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0010_toki.jpg",
+                         "title":  "toki",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0009_ako.jpg",
+                         "title":  "ako",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0008_tsubaki_R18.jpg",
+                         "title":  "tsubaki",
+                         "cat":  "bluearchive",
+                         "r18":  true
+                     },
+                     {
+                         "src":  "03_BlueArchive/0007_shun_R18.jpg",
+                         "title":  "shun",
+                         "cat":  "bluearchive",
+                         "r18":  true
+                     },
+                     {
+                         "src":  "03_BlueArchive/0006_hanako_R18.jpg",
+                         "title":  "hanako",
+                         "cat":  "bluearchive",
+                         "r18":  true
+                     },
+                     {
+                         "src":  "03_BlueArchive/0005_karin.jpg",
+                         "title":  "karin",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0004_asuna.jpg",
+                         "title":  "asuna",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0003_hina.jpg",
+                         "title":  "hina",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0002_sakurako.jpg",
+                         "title":  "sakurako",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "03_BlueArchive/0001_kisaki.jpg",
+                         "title":  "kisaki",
+                         "cat":  "bluearchive",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0101_KunoichiShiden_R18.jpg",
+                         "title":  "KunoichiShiden",
+                         "cat":  "lastorigin",
+                         "r18":  true
+                     },
+                     {
+                         "src":  "04_LastOrigin/0100_Babariana.jpg",
+                         "title":  "Babariana",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0099_BandofAACANNONIER.jpg",
+                         "title":  "BandofAACANNONIER",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0098_CocoinWhiteShell.jpg",
+                         "title":  "CocoinWhiteShell",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0097_KunoichiKaen.jpg",
+                         "title":  "KunoichiKaen",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0096_Eternity.jpg",
+                         "title":  "Eternity",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0095_SnowFeather.jpg",
+                         "title":  "SnowFeather",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0094_Express76.jpg",
+                         "title":  "Express76",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0093_Harpyia.jpg",
+                         "title":  "Harpyia",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0092_Hraesvelgr.jpg",
+                         "title":  "Hraesvelgr",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0091_Griffon.jpg",
+                         "title":  "Griffon",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0090_Neodym.jpg",
+                         "title":  "Neodym",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0089_SerapiasAlice.jpg",
+                         "title":  "SerapiasAlice",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0088_Scathy.jpg",
+                         "title":  "Scathy",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0087_DutchGirl.jpg",
+                         "title":  "DutchGirl",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0086_Armand.jpg",
+                         "title":  "Armand",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0085_LemonadeAlpha.jpg",
+                         "title":  "LemonadeAlpha",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0084_Carolina.jpg",
+                         "title":  "Carolina",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0083_Veronica.jpg",
+                         "title":  "Veronica",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0082_Aurora.jpg",
+                         "title":  "Aurora",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0081_Saraqael.jpg",
+                         "title":  "Saraqael",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0080_Hirume.jpg",
+                         "title":  "Hirume",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0079_Banshee.jpg",
+                         "title":  "Banshee",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0078_ Alvis.jpg",
+                         "title":  " Alvis",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0077_Draculina.jpg",
+                         "title":  "Draculina",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0076_Thetis.jpg",
+                         "title":  "Thetis",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0075_Io.jpg",
+                         "title":  "Io",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0074_AcrobaticSunny.jpg",
+                         "title":  "AcrobaticSunny",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0073_Hachiko.jpg",
+                         "title":  "Hachiko",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0072_Fenrir.jpg",
+                         "title":  "Fenrir",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0071_Cerestia.jpg",
+                         "title":  "Cerestia",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0070_Elven_DarkElven.jpg",
+                         "title":  "Elven_DarkElven",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0069_CailleachBheur.jpg",
+                         "title":  "CailleachBheur",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0068_Triaina.jpg",
+                         "title":  "Triaina",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0067_OberoniaRhea.jpg",
+                         "title":  "OberoniaRhea",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0066_Efreeti.jpg",
+                         "title":  "Efreeti",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0065_LRL.jpg",
+                         "title":  "LRL",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0064_Andvari.jpg",
+                         "title":  "Andvari",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0063_Perrault.jpg",
+                         "title":  "Perrault",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0062_Poi.jpg",
+                         "title":  "Poi",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0061_Atalanta.jpg",
+                         "title":  "Atalanta",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0060_Wraithy.jpg",
+                         "title":  "Wraithy",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0059_Johanna.jpg",
+                         "title":  "Johanna",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0058_Lumberjane.jpg",
+                         "title":  "Lumberjane",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0057_Miho.jpg",
+                         "title":  "Miho",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0056_Bulgasari.jpg",
+                         "title":  "Bulgasari",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0055_KeumRanS7.jpg",
+                         "title":  "KeumRanS7",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0054_Calista.jpg",
+                         "title":  "Calista",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0053_Aqua.jpg",
+                         "title":  "Aqua",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0052_Cerberus.jpg",
+                         "title":  "Cerberus",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0051_Phoenix.jpg",
+                         "title":  "Phoenix",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0050_MsSafety.jpg",
+                         "title":  "MsSafety",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0049_KunoichiZero.jpg",
+                         "title":  "KunoichiZero",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0048_BloodyPanther.jpg",
+                         "title":  "BloodyPanther",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0047_ConnectorYumi.jpg",
+                         "title":  "ConnectorYumi",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0046_SteelDraco.jpg",
+                         "title":  "SteelDraco",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0045_Echidna_R18.jpg",
+                         "title":  "Echidna",
+                         "cat":  "lastorigin",
+                         "r18":  true
+                     },
+                     {
+                         "src":  "04_LastOrigin/0044_TalonFeather.jpg",
+                         "title":  "TalonFeather",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0043_Werewolf.jpg",
+                         "title":  "Werewolf",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0042_Tiequan.jpg",
+                         "title":  "Tiequan",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0041_Sleipnir.jpg",
+                         "title":  "Sleipnir",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0040_MightyR.jpg",
+                         "title":  "MightyR",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0039_Daphne.jpg",
+                         "title":  "Daphne",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0038_Blackhound.jpg",
+                         "title":  "Blackhound",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0037_Fortune.jpg",
+                         "title":  "Fortune",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0036_Gremlin.jpg",
+                         "title":  "Gremlin",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0035_Sylphid.jpg",
+                         "title":  "Sylphid",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0034_Daika.jpg",
+                         "title":  "Daika",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0033_Nymph.jpg",
+                         "title":  "Nymph",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0032_Spriggan.jpg",
+                         "title":  "Spriggan",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0031_Circe.jpg",
+                         "title":  "Circe",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0030_Alexandra.jpg",
+                         "title":  "Alexandra",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0029_Lindwurm.jpg",
+                         "title":  "Lindwurm",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0028_Impet.jpg",
+                         "title":  "Impet",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0027_Fotia.jpg",
+                         "title":  "Fotia",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0026_SandGirl.jpg",
+                         "title":  "SandGirl",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0025_MagicalMoMo.jpg",
+                         "title":  "MagicalMoMo",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0024_FaucreTheEvilOverlord.jpg",
+                         "title":  "FaucreTheEvilOverlord",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0023_MagicalBaekTo.jpg",
+                         "title":  "MagicalBaekTo",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0022_Gnome.jpg",
+                         "title":  "Gnome",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0021_Marie.jpg",
+                         "title":  "Marie",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0020_Leprechaun_Brownie.jpg",
+                         "title":  "Leprechaun_Brownie",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0019_Sirene.jpg",
+                         "title":  "Sirene",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0018_Nereid.jpg",
+                         "title":  "Nereid",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0017_Undine.jpg",
+                         "title":  "Undine",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0016_Khan.jpg",
+                         "title":  "Khan",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0015_BlackLilith.jpg",
+                         "title":  "BlackLilith",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0014_Sowan.jpg",
+                         "title":  "Sowan",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0013_ScissorsLise.jpg",
+                         "title":  "ScissorsLise",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0012_VanillaA1.jpg",
+                         "title":  "VanillaA1",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0011_Amy.jpg",
+                         "title":  "Amy",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0010_Leona.jpg",
+                         "title":  "Leona",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0009_Valkyrie.jpg",
+                         "title":  "Valkyrie",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0008_Maria.jpg",
+                         "title":  "Maria",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0007_Doctor.jpg",
+                         "title":  "Doctor",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0006_Tomo.jpg",
+                         "title":  "Tomo",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0005_Azazel.jpg",
+                         "title":  "Azazel",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0004_Djinnia.jpg",
+                         "title":  "Djinnia",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0003_Constantia.jpg",
+                         "title":  "Constantia",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0002_Audrey.jpg",
+                         "title":  "Audrey",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "04_LastOrigin/0001_NightAngel_May.jpg",
+                         "title":  "NightAngel_May",
+                         "cat":  "lastorigin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "05_Genshin/0008_skirk.jpg",
+                         "title":  "skirk",
+                         "cat":  "genshin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "05_Genshin/0007_mizuki.jpg",
+                         "title":  "mizuki",
+                         "cat":  "genshin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "05_Genshin/0006_shenhe.jpg",
+                         "title":  "shenhe",
+                         "cat":  "genshin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "05_Genshin/0005_kokomi.jpg",
+                         "title":  "kokomi",
+                         "cat":  "genshin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "05_Genshin/0004_huTao.jpg",
+                         "title":  "huTao",
+                         "cat":  "genshin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "05_Genshin/0003_jean.jpg",
+                         "title":  "jean",
+                         "cat":  "genshin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "05_Genshin/0002_navia.jpg",
+                         "title":  "navia",
+                         "cat":  "genshin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "05_Genshin/0001_Ganyu.jpg",
+                         "title":  "Ganyu",
+                         "cat":  "genshin",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0049_Baseball_Samsung25season.jpg",
+                         "title":  "Baseball_Samsung25season",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0048_4000Followers_Thankyou.jpg",
+                         "title":  "4000Followers_Thankyou",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0047_Poponi.jpg",
+                         "title":  "Poponi",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0046_Haniel.jpg",
+                         "title":  "Haniel",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0045_Dungeonstalkersfanart.jpg",
+                         "title":  "Dungeonstalkersfanart",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0044_ChickGirl.jpg",
+                         "title":  "ChickGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0043_Girlsfrontline2_Daiyanparty.jpg",
+                         "title":  "Girlsfrontline2_Daiyanparty",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0042_Girlsfrontline2_Colphnewinter.jpg",
+                         "title":  "Girlsfrontline2_Colphnewinter",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0041_MafiaDress.jpg",
+                         "title":  "MafiaDress",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0040_OperatorGirl.jpg",
+                         "title":  "OperatorGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0039_Azurlane_Saintlouis.jpg",
+                         "title":  "Azurlane_Saintlouis",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0038_Starrail_Fuxuan.jpg",
+                         "title":  "Starrail_Fuxuan",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0037_Destinychild_Davi.jpg",
+                         "title":  "Destinychild_Davi",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0036_Starrail_Silverwolf.jpg",
+                         "title":  "Starrail_Silverwolf",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0035_ForestElf.jpg",
+                         "title":  "ForestElf",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0034_LavaDevil.jpg",
+                         "title":  "LavaDevil",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0033_WeddingDress.jpg",
+                         "title":  "WeddingDress",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0032_2023BlackRabbit.jpg",
+                         "title":  "2023BlackRabbit",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0031_HighLegRacingGirl.jpg",
+                         "title":  "HighLegRacingGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0030_WaterMagicalGirl.jpg",
+                         "title":  "WaterMagicalGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0029_WomanOnBike.jpg",
+                         "title":  "WomanOnBike",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0028_DungeonKnight.jpg",
+                         "title":  "DungeonKnight",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0027_ValkyrieIdleGameFanArt.jpg",
+                         "title":  "ValkyrieIdleGameFanArt",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0026_ValkyrieIdleGameFanArt.jpg",
+                         "title":  "ValkyrieIdleGameFanArt",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0025_VoluptuousElf.jpg",
+                         "title":  "VoluptuousElf",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0024_2022.jpg",
+                         "title":  "2022",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0023_MerryChristmas.jpg",
+                         "title":  "MerryChristmas",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0022_LadyInUniform.jpg",
+                         "title":  "LadyInUniform",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0021_PianoOfTheBlueSea.jpg",
+                         "title":  "PianoOfTheBlueSea",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0020_WomanInBlueUniform.jpg",
+                         "title":  "WomanInBlueUniform",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0019_MailNPC.jpg",
+                         "title":  "MailNPC",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0018_LadyOfTheGreatShield.jpg",
+                         "title":  "LadyOfTheGreatShield",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0017_PurpleWitch.jpg",
+                         "title":  "PurpleWitch",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0016_SFelf.jpg",
+                         "title":  "SFelf",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0015_PillarShrineMaiden.jpg",
+                         "title":  "PillarShrineMaiden",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0014_GrenadeLauncherGirl.jpg",
+                         "title":  "GrenadeLauncherGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0013_PinkGirl.jpg",
+                         "title":  "PinkGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0012_RonaRonaFanart.jpg",
+                         "title":  "RonaRonaFanart",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0011_TrickOrTreat.jpg",
+                         "title":  "TrickOrTreat",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0010_HanbokGisaengLady.jpg",
+                         "title":  "HanbokGisaengLady",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0009_LionAndMan.jpg",
+                         "title":  "LionAndMan",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0008_YellowBodysuitGirl.jpg",
+                         "title":  "YellowBodysuitGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0007_MiddleAgedMan.jpg",
+                         "title":  "MiddleAgedMan",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0006_RedRobeMage.jpg",
+                         "title":  "RedRobeMage",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0005_OniGirl.jpg",
+                         "title":  "OniGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0004_MartialartsGirl.jpg",
+                         "title":  "MartialartsGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0003_AlchemyStarsSHEOL.jpg",
+                         "title":  "AlchemyStarsSHEOL",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0002_AlchemyStarsMigard.jpg",
+                         "title":  "AlchemyStarsMigard",
+                         "cat":  "other",
+                         "r18":  false
+                     },
+                     {
+                         "src":  "06_Other/0001_CasinoBunnyGirl.jpg",
+                         "title":  "CasinoBunnyGirl",
+                         "cat":  "other",
+                         "r18":  false
+                     }
+                 ]
+}

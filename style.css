@@ -162,6 +162,17 @@ body{
     background-image:var(--img-wide, var(--img));
     background-size:cover;
   }
+  /* full-box scrim is a desktop-only need (constant legibility while the tall
+     narrow strip is mostly image); here the box is short and wide, so let the
+     image show clearly and leave only .portal-label's own gradient (below)
+     to darken the strip right behind the text. */
+  .portal::before{opacity:0;}
+  .portal-label{
+    display:flex;align-items:baseline;gap:8px;
+    padding:10px 14px;
+  }
+  .portal-label em{display:inline;margin-top:0;}
+  .portal-label em::before{content:"\00b7";margin-right:8px;opacity:.6;}
 }
 
 /* ---------- gallery view ---------- */

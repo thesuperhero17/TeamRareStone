@@ -48,25 +48,29 @@
                          "src":  "01_Nikke/0101_Alice.jpg",
                          "title":  "Alice",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2086580785964794178"
                      },
                      {
                          "src":  "01_Nikke/0100_Trina.jpg",
                          "title":  "Trina",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2084406457605235076"
                      },
                      {
                          "src":  "01_Nikke/0099_Vesti.jpg",
                          "title":  "Vesti",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2081507353795465659"
                      },
                      {
                          "src":  "01_Nikke/0098_Volume.jpg",
                          "title":  "Volume",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2079333028598624276"
                      },
                      {
                          "src":  "01_Nikke/0097_GuillotineMaiden.jpg",
@@ -654,13 +658,15 @@
                          "src":  "02_Trickcal/0045_Leone.jpg",
                          "title":  "Leone",
                          "cat":  "trickcal",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2087667950262046845"
                      },
                      {
                          "src":  "02_Trickcal/0044_Haley(Sane).jpg",
                          "title":  "Haley(Sane)",
                          "cat":  "trickcal",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2082594520030384398"
                      },
                      {
                          "src":  "02_Trickcal/0043_Kidian.jpg",

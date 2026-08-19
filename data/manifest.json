@@ -550,13 +550,15 @@
                          "src":  "01_Nikke/0024_soda.jpg",
                          "title":  "soda",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/1935827434227532246"
                      },
                      {
                          "src":  "01_Nikke/0023_stellarblade.jpg",
                          "title":  "stellarblade",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/1932928328731967991"
                      },
                      {
                          "src":  "01_Nikke/0022_nikkeatbat.jpg",
@@ -883,7 +885,8 @@
                          "src":  "02_Trickcal/0017_dancecrew.jpg",
                          "title":  "dancecrew",
                          "cat":  "trickcal",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/1936914598751322498"
                      },
                      {
                          "src":  "02_Trickcal/0016_speakicrepe.jpg",
@@ -901,7 +904,8 @@
                          "src":  "02_Trickcal/0014_joanne.jpg",
                          "title":  "joanne",
                          "cat":  "trickcal",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/1934422504665464900"
                      },
                      {
                          "src":  "02_Trickcal/0013_naia-alice.jpg",

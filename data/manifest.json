@@ -298,25 +298,29 @@
                          "src":  "01_Nikke/0065_Liliweiss.jpg",
                          "title":  "Liliweiss",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2000332471401939278"
                      },
                      {
                          "src":  "01_Nikke/0064_Guilty.jpg",
                          "title":  "Guilty",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/1997795759442325641"
                      },
                      {
                          "src":  "01_Nikke/0063_Harran.jpg",
                          "title":  "Harran",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/1995259042495864834"
                      },
                      {
                          "src":  "01_Nikke/0062_Rapunzel.jpg",
                          "title":  "Rapunzel",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/1994171879968707021"
                      },
                      {
                          "src":  "01_Nikke/0061_Yuni.jpg",
@@ -433,7 +437,8 @@
                          "src":  "01_Nikke/0044_Julia.jpg",
                          "title":  "Julia",
                          "cat":  "nikke",
-                         "r18":  false
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/1967355176915968286"
                      },
                      {
                          "src":  "01_Nikke/0043_Mast.jpg",

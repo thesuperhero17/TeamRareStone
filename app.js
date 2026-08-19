@@ -29,6 +29,7 @@
   const lbImg = document.getElementById("lbImg");
   const lbTitle = document.getElementById("lbTitle");
   const lbCat = document.getElementById("lbCat");
+  const lbXLink = document.getElementById("lbXLink");
   const r18Confirm = document.getElementById("r18Confirm");
 
   function catLabel(key) {
@@ -154,6 +155,13 @@
     lbImg.alt = art.title;
     lbTitle.textContent = art.title;
     lbCat.textContent = catLabel(art.cat);
+    if (art.xLink) {
+      lbXLink.href = art.xLink;
+      lbXLink.style.display = "flex";
+    } else {
+      lbXLink.removeAttribute("href");
+      lbXLink.style.display = "none";
+    }
   }
   function step(delta) {
     lbIndex = (lbIndex + delta + currentList.length) % currentList.length;

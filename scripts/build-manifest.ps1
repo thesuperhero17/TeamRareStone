@@ -8,6 +8,11 @@
     category-thumbs/NN_Label.jpg   -> one portal banner per category
     NN_Label/NNNN_Title.jpg        -> that category's artworks
     NN_Label/NNNN_Title_R18.jpg    -> same, flagged mature by the artist
+    NN_Label/NNNN_Title.txt        -> optional, first line = that artwork's
+                                       X (Twitter) post URL. Same basename as
+                                       the jpg (include _R18 if present). Not
+                                       required -- artworks without one just
+                                       don't show an X link in the lightbox.
   Sort order within a category: higher NNNN = newer = shown first.
 #>
 param(
@@ -57,12 +62,18 @@ foreach ($cat in $categories) {
   foreach ($f in $files) {
     $isR18 = $f.BaseName -match '_R18$'
     $title = $f.BaseName -replace '^\d{4}_', '' -replace '_R18$', ''
-    $artworks += [PSCustomObject]@{
+    $art = [PSCustomObject]@{
       src   = "$($folder.Name)/$($f.Name)"
       title = $title
       cat   = $cat.key
       r18   = $isR18
     }
+    $xLinkPath = Join-Path $folder.FullName "$($f.BaseName).txt"
+    if (Test-Path $xLinkPath) {
+      $xLink = (Get-Content -Path $xLinkPath -TotalCount 1 -Encoding UTF8).Trim()
+      if ($xLink) { $art | Add-Member -NotePropertyName xLink -NotePropertyValue $xLink }
+    }
+    $artworks += $art
   }
   Write-Output "  $($cat.label): $($files.Count) artworks"
 }

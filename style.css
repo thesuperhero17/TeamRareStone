@@ -271,6 +271,12 @@ body{
 .lightbox img{max-width:92vw;max-height:76vh;border-radius:2px;box-shadow:0 30px 80px -20px rgba(0,0,0,.7);}
 .lightbox figcaption{color:#f3ede8;margin-top:16px;font-size:14px;}
 .lightbox figcaption .c{color:var(--accent);text-transform:uppercase;letter-spacing:.06em;font-size:10.5px;display:block;margin-top:3px;}
+.lb-x-link{
+  display:none;align-items:center;gap:6px;margin-top:12px;color:#f3ede8;opacity:.6;
+  font-size:11.5px;letter-spacing:.03em;text-decoration:none;transition:opacity .15s ease;
+}
+.lb-x-link:hover{opacity:1;}
+.lb-x-link svg{width:12px;height:12px;fill:currentColor;}
 .lb-btn{
   position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;
   color:#f3ede8;font-size:30px;line-height:1;cursor:pointer;padding:16px;opacity:.68;transition:opacity .15s ease;

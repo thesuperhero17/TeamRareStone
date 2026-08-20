@@ -7,7 +7,7 @@
   resize-image.bat next to this file. Loops so you can do several in a row.
 #>
 param(
-  [int]$MaxLongEdge = 1800,
+  [int]$MaxLongEdge = 2000,
   [int]$JpegQuality = 85
 )
 

@@ -96,8 +96,18 @@
 
   function renderGrid() {
     gridEl.innerHTML = "";
-    currentList =
-      activeCat === "all" ? ARTWORKS.slice() : ARTWORKS.filter((a) => a.cat === activeCat);
+    if (activeCat === "all") {
+      // Artworks with a real recorded add-date go first, newest first.
+      // Older artworks predating that tracking have no date -- keep them
+      // in the existing category-grouped order, after the dated ones.
+      const dated = ARTWORKS.filter((a) => a.addedDate).sort((a, b) =>
+        b.addedDate.localeCompare(a.addedDate)
+      );
+      const undated = ARTWORKS.filter((a) => !a.addedDate);
+      currentList = dated.concat(undated);
+    } else {
+      currentList = ARTWORKS.filter((a) => a.cat === activeCat);
+    }
 
     if (currentList.length === 0) {
       gridEl.innerHTML = '<p class="empty-state">Nothing here yet.</p>';

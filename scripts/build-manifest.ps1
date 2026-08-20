@@ -23,6 +23,31 @@ $thumbDir = Join-Path $Root "category-thumbs"
 $dataDir = Join-Path $Root "data"
 New-Item -ItemType Directory -Force $dataDir | Out-Null
 
+# --- "date added" tracking (2026-08-21 convention) ---
+# File timestamps (created/modified) aren't reliable as an upload-date proxy --
+# a bulk resize or a folder migration touches every file at once and wipes out
+# any real per-artwork history. So instead we keep our own small ledger here:
+# the first time build-manifest.ps1 ever sees a given artwork, it stamps that
+# artwork with the real current moment and remembers it forever after (existing
+# stamps are never overwritten). Artworks from before this convention existed
+# have no stamp at all -- the site treats "no stamp" as legacy/undated and
+# falls back to the old category-grouped ordering for those. See the
+# project-rarestone-portfolio memory for why (a user question about sorting
+# the All tab by upload date, and file-timestamp-as-proxy turning out unusable).
+$datesPath = Join-Path $dataDir "added-dates.json"
+$addedDates = [ordered]@{}
+if (Test-Path $datesPath) {
+  $loaded = Get-Content $datesPath -Raw | ConvertFrom-Json
+  foreach ($p in $loaded.PSObject.Properties) { $addedDates[$p.Name] = $p.Value }
+}
+$dateKeyCounts = @{}
+function Get-DateKey($catKey, $title) {
+  $base = "$catKey|$title"
+  if (-not $dateKeyCounts.ContainsKey($base)) { $dateKeyCounts[$base] = 0 }
+  $dateKeyCounts[$base]++
+  return "$base|$($dateKeyCounts[$base])"
+}
+
 # --- categories, from category-thumbs/ (skip _wide companions, handled below) ---
 $thumbFiles = Get-ChildItem -Path $thumbDir -File -Filter "*.jpg" |
   Where-Object { $_.BaseName -notmatch '_wide$' } | Sort-Object Name
@@ -73,6 +98,16 @@ foreach ($cat in $categories) {
       $xLink = (Get-Content -Path $xLinkPath -TotalCount 1 -Encoding UTF8).Trim()
       if ($xLink) { $art | Add-Member -NotePropertyName xLink -NotePropertyValue $xLink }
     }
+
+    $dateKey = Get-DateKey $cat.key $title
+    if (-not $addedDates.Contains($dateKey)) {
+      # Never seen before -> genuinely new artwork, stamp it now.
+      $addedDates[$dateKey] = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss")
+    }
+    if ($addedDates[$dateKey]) {
+      $art | Add-Member -NotePropertyName addedDate -NotePropertyValue $addedDates[$dateKey]
+    }
+
     $artworks += $art
   }
   Write-Output "  $($cat.label): $($files.Count) artworks"
@@ -85,5 +120,6 @@ $manifest = [PSCustomObject]@{
 
 $outPath = Join-Path $dataDir "manifest.json"
 $manifest | ConvertTo-Json -Depth 5 | Set-Content -Path $outPath -Encoding UTF8
+$addedDates | ConvertTo-Json -Depth 3 | Set-Content -Path $datesPath -Encoding UTF8
 Write-Output ""
 Write-Output "Wrote $outPath ($($artworks.Count) artworks, $($categories.Count) categories)"

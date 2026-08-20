@@ -48,6 +48,19 @@ function Get-DateKey($catKey, $title) {
   return "$base|$($dateKeyCounts[$base])"
 }
 
+# X (Twitter) status IDs are Snowflake IDs -- they encode the real post
+# timestamp. When an artwork has a linked X post, that's a far more precise
+# "when was this actually shared" signal than our own first-seen ledger, so
+# it's used to backfill legacy (pre-tracking) entries too, not just new ones.
+function Get-XPostDate($xLink) {
+  if ($xLink -match '/status/(\d+)') {
+    $id = [int64]$Matches[1]
+    $ms = ($id -shr 22) + 1288834974657
+    return [DateTimeOffset]::FromUnixTimeMilliseconds($ms).UtcDateTime.ToString("yyyy-MM-ddTHH:mm:ss")
+  }
+  return $null
+}
+
 # --- categories, from category-thumbs/ (skip _wide companions, handled below) ---
 $thumbFiles = Get-ChildItem -Path $thumbDir -File -Filter "*.jpg" |
   Where-Object { $_.BaseName -notmatch '_wide$' } | Sort-Object Name
@@ -93,6 +106,7 @@ foreach ($cat in $categories) {
       cat   = $cat.key
       r18   = $isR18
     }
+    $xLink = $null
     $xLinkPath = Join-Path $folder.FullName "$($f.BaseName).txt"
     if (Test-Path $xLinkPath) {
       $xLink = (Get-Content -Path $xLinkPath -TotalCount 1 -Encoding UTF8).Trim()
@@ -100,9 +114,14 @@ foreach ($cat in $categories) {
     }
 
     $dateKey = Get-DateKey $cat.key $title
+    $xPostDate = if ($xLink) { Get-XPostDate $xLink } else { $null }
     if (-not $addedDates.Contains($dateKey)) {
-      # Never seen before -> genuinely new artwork, stamp it now.
-      $addedDates[$dateKey] = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss")
+      # Never seen before -> genuinely new artwork. Prefer the precise X post
+      # timestamp when we have one, otherwise just stamp "now".
+      $addedDates[$dateKey] = if ($xPostDate) { $xPostDate } else { (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss") }
+    } elseif (-not $addedDates[$dateKey] -and $xPostDate) {
+      # Legacy entry with no date yet, but we can now backfill it from its X link.
+      $addedDates[$dateKey] = $xPostDate
     }
     if ($addedDates[$dateKey]) {
       $art | Add-Member -NotePropertyName addedDate -NotePropertyValue $addedDates[$dateKey]

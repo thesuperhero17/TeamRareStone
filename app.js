@@ -147,6 +147,9 @@
     r18Unlocked = true;
     sessionStorage.setItem("r18-ok", "1");
     r18Confirm.classList.remove("open");
+    // openLightbox() works whether the lightbox is already open (stepping
+    // prev/next onto an R-18 image) or not (first open from the grid) --
+    // re-adding the "open" class when it's already there is a no-op.
     if (pendingIndex !== null) openLightbox(pendingIndex);
     pendingIndex = null;
   });
@@ -174,7 +177,18 @@
     }
   }
   function step(delta) {
-    lbIndex = (lbIndex + delta + currentList.length) % currentList.length;
+    const nextIndex = (lbIndex + delta + currentList.length) % currentList.length;
+    const art = currentList[nextIndex];
+    if (art.r18 && !r18Unlocked) {
+      // Same gate as clicking an R-18 card from the grid: pause here and
+      // show the confirm dialog instead of advancing straight into it.
+      // Cancelling just closes the dialog -- lbIndex never changed, so the
+      // lightbox is left exactly where it was.
+      pendingIndex = nextIndex;
+      r18Confirm.classList.add("open");
+      return;
+    }
+    lbIndex = nextIndex;
     updateLightbox();
   }
 

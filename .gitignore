@@ -5,3 +5,9 @@
 /0[0-9]_*/*.PNG
 /category-thumbs/*.png
 /category-thumbs/*.PNG
+
+# Same deal for the per-category Png/ backup subfolders (2026-08-20 convention) --
+# these must never reach GitHub. A whole folder was accidentally committed once
+# before this rule existed; see project memory for the cleanup that followed.
+/0[0-9]_*/Png/
+/0[0-9]_*/PNG/

@@ -278,12 +278,20 @@ body{
 .lb-x-link:hover{opacity:1;}
 .lb-x-link svg{width:12px;height:12px;fill:currentColor;}
 .lb-btn{
-  position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;
-  color:#f3ede8;font-size:30px;line-height:1;cursor:pointer;padding:16px;opacity:.68;transition:opacity .15s ease;
+  /* Full-height side strip, not just a small icon-sized hit target -- much
+     easier to click without aiming carefully. The arrow glyph itself stays
+     pinned near the edge (padding, not centering) so it doesn't visually
+     drift from where it always was; only the invisible clickable area grows.
+     z-index above <figure> so the strip stays clickable even where it visually
+     overlaps a wide image (lb-prev comes before figure in the DOM and would
+     otherwise sit underneath it there). */
+  position:absolute;top:0;height:100%;width:min(20vw,220px);
+  display:flex;align-items:center;background:none;border:none;z-index:2;
+  color:#f3ede8;font-size:30px;line-height:1;cursor:pointer;opacity:.68;transition:opacity .15s ease;
 }
 .lb-btn:hover{opacity:1;}
-.lb-prev{left:4px;}
-.lb-next{right:4px;}
+.lb-prev{left:0;justify-content:flex-start;padding-left:16px;}
+.lb-next{right:0;justify-content:flex-end;padding-right:16px;}
 .lb-close{
   position:absolute;top:18px;right:22px;background:none;border:none;
   color:#f3ede8;font-size:24px;cursor:pointer;opacity:.68;transition:opacity .15s ease;

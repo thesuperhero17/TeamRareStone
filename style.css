@@ -300,7 +300,17 @@ body{
   color:#f3ede8;font-size:24px;cursor:pointer;opacity:.68;transition:opacity .15s ease;
 }
 .lb-close:hover{opacity:1;}
-.lb-btn:focus-visible,.lb-close:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.lb-close:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+/* .lb-btn itself is now a full-height edge-to-edge strip (see above) -- a
+   normal :focus-visible outline traces the whole element, which meant a
+   thin accent-colored line down the *entire* screen height on both sides
+   after clicking a button and then pressing an arrow key (keyboard input
+   while still focused re-triggers :focus-visible even though the initial
+   focus came from a click). Scope the ring to just the glyph instead, so
+   keyboard users still get a visible focus indicator without it turning
+   into a full-height line down the edge of the screen. */
+.lb-btn:focus-visible{outline:none;}
+.lb-btn:focus-visible .lb-glyph{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px;}
 
 .r18-confirm{
   position:fixed;inset:0;background:var(--scrim);display:flex;align-items:center;justify-content:center;

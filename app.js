@@ -198,6 +198,39 @@
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) closeLightbox();
   });
+
+  // Swipe left/right to step through images (mobile). Works alongside the
+  // side buttons, doesn't replace them. A real swipe calls preventDefault()
+  // on touchend so mobile browsers don't also fire their usual synthetic
+  // click afterward -- otherwise a swipe that ends over the background could
+  // both advance the image AND close the lightbox in the same gesture.
+  let touchStartX = null;
+  let touchStartY = null;
+  lightbox.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.touches.length !== 1) { touchStartX = null; return; } // ignore pinch etc.
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    },
+    { passive: true }
+  );
+  lightbox.addEventListener(
+    "touchend",
+    (e) => {
+      if (touchStartX === null) return;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - touchStartX;
+      const dy = t.clientY - touchStartY;
+      touchStartX = touchStartY = null;
+      const SWIPE_THRESHOLD = 50;
+      if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        e.preventDefault();
+        step(dx < 0 ? 1 : -1); // swipe left -> next, swipe right -> prev
+      }
+    },
+    { passive: false }
+  );
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && r18Confirm.classList.contains("open")) {
       r18Confirm.classList.remove("open");

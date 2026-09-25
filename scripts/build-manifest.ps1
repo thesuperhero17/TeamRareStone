@@ -40,6 +40,14 @@ if (Test-Path $datesPath) {
   $loaded = Get-Content $datesPath -Raw | ConvertFrom-Json
   foreach ($p in $loaded.PSObject.Properties) { $addedDates[$p.Name] = $p.Value }
 }
+# Keys are "cat|title|N", N = which same-titled artwork this is within its
+# category. Note both hashtables here are case-INsensitive (PowerShell default),
+# so "Joanne" and "joanne" share one title slot -- intentional, since Windows
+# PowerShell's ConvertFrom-Json can't load keys that differ only by case.
+# N is counted OLDEST-first (lowest NNNN = 1), so a newly appended redraw of an
+# existing character gets a fresh N instead of taking over the older piece's
+# key. (It used to count newest-first, and a new 0048_Joanne inherited the old
+# 0014_joanne's 2025 date -- it vanished from the top of the All tab.)
 $dateKeyCounts = @{}
 function Get-DateKey($catKey, $title) {
   $base = "$catKey|$title"
@@ -97,6 +105,13 @@ foreach ($cat in $categories) {
     Where-Object { $_.Name -match '^\d{4}_' } |
     Sort-Object Name -Descending   # higher number = newer = first
 
+  # Assign ledger keys oldest-first (see Get-DateKey above for why).
+  $dateKeys = @{}
+  foreach ($f in ($files | Sort-Object Name)) {
+    $t = $f.BaseName -replace '^\d{4}_', '' -replace '_R18$', ''
+    $dateKeys[$f.Name] = Get-DateKey $cat.key $t
+  }
+
   foreach ($f in $files) {
     $isR18 = $f.BaseName -match '_R18$'
     $title = $f.BaseName -replace '^\d{4}_', '' -replace '_R18$', ''
@@ -113,15 +128,15 @@ foreach ($cat in $categories) {
       if ($xLink) { $art | Add-Member -NotePropertyName xLink -NotePropertyValue $xLink }
     }
 
-    $dateKey = Get-DateKey $cat.key $title
+    $dateKey = $dateKeys[$f.Name]
     $xPostDate = if ($xLink) { Get-XPostDate $xLink } else { $null }
-    if (-not $addedDates.Contains($dateKey)) {
-      # Never seen before -> genuinely new artwork. Prefer the precise X post
-      # timestamp when we have one, otherwise just stamp "now".
-      $addedDates[$dateKey] = if ($xPostDate) { $xPostDate } else { (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss") }
-    } elseif (-not $addedDates[$dateKey] -and $xPostDate) {
-      # Legacy entry with no date yet, but we can now backfill it from its X link.
+    if ($xPostDate) {
+      # The X post timestamp is ground truth whenever we have one, so it always
+      # wins -- including over an older "now" stamp from before the .txt was added.
       $addedDates[$dateKey] = $xPostDate
+    } elseif (-not $addedDates.Contains($dateKey)) {
+      # Never seen before and no X link -> genuinely new artwork, stamp "now".
+      $addedDates[$dateKey] = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss")
     }
     if ($addedDates[$dateKey]) {
       $art | Add-Member -NotePropertyName addedDate -NotePropertyValue $addedDates[$dateKey]

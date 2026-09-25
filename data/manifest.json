@@ -45,6 +45,14 @@
                    ],
     "artworks":  [
                      {
+                         "src":  "01_Nikke/0106_Flora.jpg",
+                         "title":  "Flora",
+                         "cat":  "nikke",
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2101801077234684244",
+                         "addedDate":  "2026-09-20T22:30:01"
+                     },
+                     {
                          "src":  "01_Nikke/0105_Jackal.jpg",
                          "title":  "Jackal",
                          "cat":  "nikke",
@@ -883,6 +891,14 @@
                          "r18":  false,
                          "xLink":  "https://x.com/RARESTONE3/status/1606725881367785474",
                          "addedDate":  "2022-12-24T18:57:56"
+                     },
+                     {
+                         "src":  "02_Trickcal/0048_Joanne.jpg",
+                         "title":  "Joanne",
+                         "cat":  "trickcal",
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2102525851095167455",
+                         "addedDate":  "2025-06-16T01:27:19"
                      },
                      {
                          "src":  "02_Trickcal/0047_Selene.jpg",

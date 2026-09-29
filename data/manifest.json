@@ -45,6 +45,14 @@
                    ],
     "artworks":  [
                      {
+                         "src":  "01_Nikke/0107_TiaNaga.jpg",
+                         "title":  "TiaNaga",
+                         "cat":  "nikke",
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2104337789177176202",
+                         "addedDate":  "2026-09-27T22:30:00"
+                     },
+                     {
                          "src":  "01_Nikke/0106_Flora.jpg",
                          "title":  "Flora",
                          "cat":  "nikke",

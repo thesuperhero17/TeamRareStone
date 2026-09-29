@@ -1,8 +1,13 @@
 <#
   Bulk-regenerate the display JPGs in every 0N_Category folder from the
   pristine PNG originals kept in that category's Png\ subfolder.
-  - Matches PNG to JPG by TITLE (the part after the NNNN_ number), not by
-    number -- robust to the two folders' numbering having drifted apart.
+  - Matches PNG to JPG by the exact full name (NNNN_Title) first. Only if
+    that fails does it fall back to TITLE alone (the part after NNNN_), to
+    survive the two folders' numbering having drifted apart -- and only when
+    that title is unique in both folders. Repeat-character titles (helm/Helm,
+    dorothy/dorothy, ...) are never matched by title: PowerShell hashtables
+    are case-insensitive, and title-only matching once overwrote 15 older
+    artworks with their newer same-name redraw (fixed 2026-09-29).
   - Caps the long edge at $MaxLongEdge px (only shrinks, never enlarges),
     re-encodes as JPEG at quality $JpegQuality, and overwrites the JPG in
     place at its current path (same number/title it already has).
@@ -37,23 +42,33 @@ foreach ($cat in $categories) {
   $pngDir = Join-Path $cat.FullName "Png"
   if (-not (Test-Path $pngDir)) { continue }
 
-  $pngMap = @{}
-  Get-ChildItem $pngDir -Filter "*.png" | ForEach-Object {
-    if ($_.BaseName -match '^\d{4}_(.+)$') { $pngMap[$Matches[1]] = $_.FullName }
-  }
+  $pngFiles = @(Get-ChildItem $pngDir -Filter "*.png" | Where-Object { $_.BaseName -match '^\d{4}_.+$' })
+  $jpgFiles = @(Get-ChildItem $cat.FullName -Filter "*.jpg" | Where-Object { $_.BaseName -match '^\d{4}_.+$' })
 
-  $jpgFiles = Get-ChildItem $cat.FullName -Filter "*.jpg"
+  # Exact full-name lookup (ordinal = case-sensitive).
+  $byName = New-Object 'System.Collections.Generic.Dictionary[string,string]' ([StringComparer]::Ordinal)
+  foreach ($pf in $pngFiles) { $byName[$pf.BaseName] = $pf.FullName }
+  # Title fallback: count titles case-insensitively in BOTH folders, and only
+  # allow the fallback for titles that appear exactly once in each.
+  $pngTitleCount = @{}; $jpgTitleCount = @{}; $byTitle = @{}
+  foreach ($pf in $pngFiles) { $t = $pf.BaseName -replace '^\d{4}_', ''; $pngTitleCount[$t] = 1 + [int]$pngTitleCount[$t]; $byTitle[$t] = $pf.FullName }
+  foreach ($jf in $jpgFiles) { $t = $jf.BaseName -replace '^\d{4}_', ''; $jpgTitleCount[$t] = 1 + [int]$jpgTitleCount[$t] }
+
   $catConverted = 0
   foreach ($jf in $jpgFiles) {
-    if ($jf.BaseName -notmatch '^\d{4}_(.+)$') { continue }
-    $title = $Matches[1]
-    if (-not $pngMap.ContainsKey($title)) {
-      $skipped += "$($cat.Name)/$($jf.Name)"
+    $title = $jf.BaseName -replace '^\d{4}_', ''
+    if ($byName.ContainsKey($jf.BaseName)) {
+      $pngPath = $byName[$jf.BaseName]
+    } elseif ($pngTitleCount[$title] -eq 1 -and $jpgTitleCount[$title] -eq 1) {
+      $pngPath = $byTitle[$title]
+    } else {
+      $why = if ($pngTitleCount[$title] -gt 1 -or $jpgTitleCount[$title] -gt 1) { "same title used more than once -- match by hand" } else { "no matching PNG" }
+      $skipped += "$($cat.Name)/$($jf.Name)  ($why)"
       continue
     }
 
     $oldSize = $jf.Length
-    $img = [System.Drawing.Image]::FromFile($pngMap[$title])
+    $img = [System.Drawing.Image]::FromFile($pngPath)
     $origW = $img.Width; $origH = $img.Height
     $longEdge = [Math]::Max($origW, $origH)
     if ($longEdge -gt $MaxLongEdge) {
@@ -92,6 +107,6 @@ Write-Host "  Total converted: $converted" -ForegroundColor Green
 Write-Host ("  Size: {0:N1} MB -> {1:N1} MB" -f ($totalOld/1MB), ($totalNew/1MB))
 if ($skipped.Count -gt 0) {
   Write-Host ""
-  Write-Host "  Skipped (no title-matching PNG found):" -ForegroundColor Red
+  Write-Host "  Skipped (left untouched):" -ForegroundColor Red
   $skipped | ForEach-Object { Write-Host "    - $_" }
 }

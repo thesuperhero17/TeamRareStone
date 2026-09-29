@@ -13,6 +13,21 @@ Write-Host ""
 Write-Host "Step 1/3: Rebuilding the artwork list..." -ForegroundColor Cyan
 & (Join-Path $root "scripts\build-manifest.ps1")
 
+# Safety net: two artworks that are byte-identical files means one of them
+# got overwritten by the other (happened to 15 same-name redraws once --
+# helm/Helm, Diana/diana, ... -- and went unnoticed for over a month).
+$artFiles = Get-ChildItem $root -Directory | Where-Object { $_.Name -match '^\d{2}_' } |
+  ForEach-Object { Get-ChildItem $_.FullName -File -Filter "*.jpg" }
+$dupes = $artFiles | Group-Object { (Get-FileHash $_.FullName -Algorithm MD5).Hash } | Where-Object Count -gt 1
+if ($dupes) {
+  Write-Host ""
+  Write-Host "  WARNING: these artworks are the exact same image file:" -ForegroundColor Red
+  foreach ($d in $dupes) { Write-Host ("    - " + (($d.Group | ForEach-Object { "$($_.Directory.Name)/$($_.Name)" }) -join "  ==  ")) -ForegroundColor Red }
+  Write-Host "  One of each pair was probably overwritten by mistake." -ForegroundColor Red
+  $answer = Read-Host "  Publish anyway? (y/N)"
+  if ($answer -ne 'y') { Write-Host "  Stopped. Nothing was published."; Read-Host "Press Enter to close"; exit 1 }
+}
+
 Write-Host ""
 Write-Host "Step 2/3: Checking what changed..." -ForegroundColor Cyan
 git add -A | Out-Null
@@ -46,6 +61,6 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host ""
 Write-Host "  Done! Live in about a minute at:" -ForegroundColor Green
-Write-Host "  https://thesuperhero17.github.io/TeamRareStone/" -ForegroundColor Green
+Write-Host "  https://teamrarestone.art/" -ForegroundColor Green
 Write-Host ""
 Read-Host "Press Enter to close"

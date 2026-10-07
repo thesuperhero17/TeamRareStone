@@ -45,6 +45,14 @@
                    ],
     "artworks":  [
                      {
+                         "src":  "01_Nikke/0108_Elegg.jpg",
+                         "title":  "Elegg",
+                         "cat":  "nikke",
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2107236895218397668",
+                         "addedDate":  "2026-10-05T22:30:01"
+                     },
+                     {
                          "src":  "01_Nikke/0107_TiaNaga.jpg",
                          "title":  "TiaNaga",
                          "cat":  "nikke",

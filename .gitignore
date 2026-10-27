@@ -11,3 +11,8 @@
 # before this rule existed; see project memory for the cleanup that followed.
 /0[0-9]_*/Png/
 /0[0-9]_*/PNG/
+
+# Python leftovers from scripts/make-thumbs.py. (The thumbs/ folder itself IS
+# committed -- the site serves it. The Python environment lives outside the repo.)
+__pycache__/
+*.pyc

@@ -10,8 +10,23 @@ Write-Host ""
 Write-Host "=== TeamRareStone -- Publish ===" -ForegroundColor Yellow
 
 Write-Host ""
-Write-Host "Step 1/3: Rebuilding the artwork list..." -ForegroundColor Cyan
+Write-Host "Step 1/4: Rebuilding the artwork list..." -ForegroundColor Cyan
 & (Join-Path $root "scripts\build-manifest.ps1")
+
+# Grid thumbnails (small pre-shrunk copies, so 100%-scale monitors don't show
+# jagged/moire thumbnails) + face position for each artwork (data/focus.json).
+# Needs the separate Python environment D:\Cluade\tools\face-venv (outside the
+# repo on purpose). Only new or changed artworks are processed.
+Write-Host ""
+Write-Host "Step 2/4: Making grid thumbnails and finding faces..." -ForegroundColor Cyan
+$py = "D:\Cluade\tools\face-venv\Scripts\python.exe"
+if (Test-Path $py) {
+  $env:PYTHONIOENCODING = "utf-8"
+  & $py -I (Join-Path $root "scripts\make-thumbs.py")
+  if ($LASTEXITCODE -ne 0) { Write-Host "  Thumbnail step failed -- the site falls back to full images for new artwork." -ForegroundColor Yellow }
+} else {
+  Write-Host "  Skipped: $py not found -- new artwork shows full images in the grid until it exists." -ForegroundColor Yellow
+}
 
 # Safety net: two artworks that are byte-identical files means one of them
 # got overwritten by the other (happened to 15 same-name redraws once --
@@ -29,7 +44,7 @@ if ($dupes) {
 }
 
 Write-Host ""
-Write-Host "Step 2/3: Checking what changed..." -ForegroundColor Cyan
+Write-Host "Step 3/4: Checking what changed..." -ForegroundColor Cyan
 git add -A | Out-Null
 $changes = git status --short
 if (-not $changes) {
@@ -48,7 +63,7 @@ $stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 $msg = "Update artwork -- $stamp"
 
 Write-Host ""
-Write-Host "Step 3/3: Publishing to GitHub..." -ForegroundColor Cyan
+Write-Host "Step 4/4: Publishing to GitHub..." -ForegroundColor Cyan
 git commit -m $msg | Out-Null
 $pushResult = git push 2>&1
 if ($LASTEXITCODE -ne 0) {

@@ -14,6 +14,17 @@
     return;
   }
 
+  // Grid thumbnails + face focus point, written by scripts/make-thumbs.py.
+  // { "01_Nikke/0110_Diesel.jpg": [faceX, faceY, hash8], ... } with x/y as 0-1
+  // fractions. Missing file or entry = fall back to the full image, centered.
+  let FOCUS = {};
+  try {
+    const res = await fetch("data/focus.json", { cache: "no-store" });
+    if (res.ok) FOCUS = await res.json();
+  } catch (err) {
+    console.warn("No data/focus.json -- grid uses full images", err);
+  }
+
   let activeCat = "all";
   let currentList = ARTWORKS.slice();
   let lbIndex = 0;
@@ -94,6 +105,27 @@
     });
   }
 
+  // Grid card image: small pre-made thumbnail (1x / 2x by screen density) so the
+  // browser isn't shrinking a 2000px original (that looked jagged on 100%-scale
+  // monitors), with object-position on the detected face so any card shape --
+  // tall desktop card or square mobile tile -- keeps the face in frame.
+  function cardImg(art) {
+    const f = FOCUS[art.src];
+    if (!f) {
+      return '<img src="' + encodeURI(art.src) + '" alt="' + art.title + '" loading="lazy" />';
+    }
+    const v = "?v=" + f[2];
+    const t1 = encodeURI("thumbs/" + art.src) + v;
+    const t2 = encodeURI("thumbs/" + art.src.replace(/\.jpg$/i, "_2x.jpg")) + v;
+    const pos = (f[0] * 100).toFixed(1) + "% " + (f[1] * 100).toFixed(1) + "%";
+    return (
+      '<img src="' + t1 + '" srcset="' + t1 + " 1x, " + t2 + ' 2x"' +
+      ' data-full="' + encodeURI(art.src) + '"' +
+      ' style="object-position:' + pos + '"' +
+      ' alt="' + art.title + '" loading="lazy" />'
+    );
+  }
+
   function renderGrid() {
     gridEl.innerHTML = "";
     if (activeCat === "all") {
@@ -118,7 +150,7 @@
       const card = document.createElement("div");
       card.className = "card" + (art.r18 ? " is-r18" : "");
       card.innerHTML =
-        '<img src="' + art.src + '" alt="' + art.title + '" loading="lazy" />' +
+        cardImg(art) +
         (art.r18
           ? '<div class="r18-badge"><span class="tag">R-18</span><span class="hint">Tap to confirm</span></div>'
           : "") +
@@ -127,6 +159,18 @@
         '</div><div class="c">' +
         catLabel(art.cat) +
         "</div></div>";
+      // If a thumbnail is missing (not generated yet), quietly show the full image.
+      const img = card.querySelector("img");
+      img.addEventListener(
+        "error",
+        () => {
+          if (img.dataset.full && img.getAttribute("src") !== img.dataset.full) {
+            img.removeAttribute("srcset");
+            img.src = img.dataset.full;
+          }
+        },
+        { once: true }
+      );
       card.addEventListener("click", () => {
         if (art.r18 && !r18Unlocked) {
           pendingIndex = i;

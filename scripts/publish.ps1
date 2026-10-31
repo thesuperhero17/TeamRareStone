@@ -21,7 +21,6 @@ Write-Host ""
 Write-Host "Step 2/4: Making grid thumbnails and finding faces..." -ForegroundColor Cyan
 $py = "D:\Cluade\tools\face-venv\Scripts\python.exe"
 if (Test-Path $py) {
-  $env:PYTHONIOENCODING = "utf-8"
   & $py -I (Join-Path $root "scripts\make-thumbs.py")
   if ($LASTEXITCODE -ne 0) { Write-Host "  Thumbnail step failed -- the site falls back to full images for new artwork." -ForegroundColor Yellow }
 } else {

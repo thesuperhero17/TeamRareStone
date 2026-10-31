@@ -45,6 +45,14 @@
                    ],
     "artworks":  [
                      {
+                         "src":  "01_Nikke/0111_TTSTAR.jpg",
+                         "title":  "TTSTAR",
+                         "cat":  "nikke",
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2114484650924012004",
+                         "addedDate":  "2026-10-25T22:30:00"
+                     },
+                     {
                          "src":  "01_Nikke/0110_Diesel.jpg",
                          "title":  "Diesel",
                          "cat":  "nikke",
@@ -923,6 +931,14 @@
                          "r18":  false,
                          "xLink":  "https://x.com/RARESTONE3/status/1606725881367785474",
                          "addedDate":  "2022-12-24T18:57:56"
+                     },
+                     {
+                         "src":  "02_Trickcal/0051_Ui(Memory).jpg",
+                         "title":  "Ui(Memory)",
+                         "cat":  "trickcal",
+                         "r18":  false,
+                         "xLink":  "https://x.com/RARESTONE3/status/2115571815989084221",
+                         "addedDate":  "2026-10-28T22:30:01"
                      },
                      {
                          "src":  "02_Trickcal/0050_Vivi(Divine).jpg",
